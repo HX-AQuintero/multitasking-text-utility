@@ -27,7 +27,7 @@ def call_llm(prompt_input: str, max_retries: int = 1) -> tuple:
     ]
     
     response = client.chat.completions.create(
-      model='gpt-4o-mini', #TODO! ADD THE REASON WHY THIS MODEL INTO REPORT FILE
+      model='gpt-4o-mini-2024-07-18', #TODO! ADD THE REASON WHY THIS MODEL INTO REPORT FILE
       messages=messages,
       max_tokens=400, #TODO! ADD THE REASON WHY THIS AMOUNT OF TOKENS ARE CONSIDERED INTO REPORT FILE
       temperature=0.2, #TODO CHANGE VALUES 0.0-0.3 TO SEE CHANGES. PUT THAT INTO REPORT FILE
